@@ -8,6 +8,7 @@ class Solution {
                 answer[1] = i;
             }
         }
+
         return answer;
     }
 }
