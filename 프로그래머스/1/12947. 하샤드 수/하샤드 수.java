@@ -3,10 +3,10 @@ class Solution {
         boolean answer = true;
         int num = 0;
         
-        String str = Integer.toString(x);
+        String[] str = String.valueOf(x).split("");
         
-        for (int i = 0; i < str.length(); i++) {
-            num += Character.getNumericValue(str.charAt(i));
+        for (int i = 0; i < str.length; i++) {
+            num += Integer.parseInt(str[i]);
         }
         
         if (x % num == 0) {
